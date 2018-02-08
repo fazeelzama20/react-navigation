@@ -1,0 +1,13 @@
+import {StackNavigator, DrawerNavigator} from 'react-navigation';
+import SplashScreen from './src/SplashScreen'
+import LoginForm from './src/LoginForm';
+import HomeScreen from './src/HomeScreen';
+
+const App = StackNavigator({
+      SplashScreen: {screen: SplashScreen},
+      LoginForm: {screen: LoginForm},
+      HomeScreen: {screen: NavigationDrawer},
+            TotalLoss: {screen: TotalLoss}
+});
+
+export default App;
